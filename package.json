@@ -1,0 +1,27 @@
+{
+  "name": "daisyleeblog",
+  "version": "1.0.0",
+  "description": "Based on the starting files used by [Kevin Powell](https://kevinpowell.co) to create a personal blog site for the [Codementor](https://www.codementor.io/) DevProjects Challenge, [Create a fast and secure blog using JAMStack](https://www.codementor.io/projects/web/create-a-fast-and-secure-blog-using-jamstack-c93coupnxb). ",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasgons/DaisyLeeBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomasgons/DaisyLeeBlog/issues"
+  },
+  "homepage": "https://github.com/tomasgons/DaisyLeeBlog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "luxon": "^2.1.1"
+  }
+}
