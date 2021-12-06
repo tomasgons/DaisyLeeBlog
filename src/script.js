@@ -4,7 +4,7 @@ const nav = document.querySelector("#nav")
 const wrapper = document.querySelector(".wrapper")
 const closeNav = document.querySelector("#close-nav")
 const links = document.querySelectorAll("nav li")
-const header = document.querySelector(".header")
+
 
 const slides = document.querySelectorAll(".mslide")
 
@@ -41,7 +41,9 @@ next.addEventListener('click', nextSlide)
 prev.addEventListener('click', prevSlide)
 
 toggle.addEventListener("click", () => {
+    console.log('check')
     nav.classList.toggle("nav-closed");
+
 })
     ;
 
@@ -57,6 +59,7 @@ wrapper.addEventListener("click", (e) =>
 links.forEach((link) => {
     link.addEventListener("click", () => {
         nav.classList.add("nav-closed");
+
     })
 
 });

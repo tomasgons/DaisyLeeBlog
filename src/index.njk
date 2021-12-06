@@ -6,46 +6,24 @@ layout: 'base.njk'
 
 
 
- <div class="outer">
-    <header id="header">
-      <button id="toggle" class="toggle">
-        <i class="fa fa-bars fa-2x"></i>
-      </button>
-      <h1>DAISY LEE</h1>
-      <div class="headerimg">
+ 
+    
+     <div class="mainpic"><div class="headerimg">
         <img src="/assets/blog/pics/Daisy/dl6a.jpg" alt="" />
         <p>"I love a challenge!"</p>
-      </div>
-      
-    </header>
-    <nav id="nav" class="nav-closed">
-      <ul>
-        <li><a href="#header">Home</a></li>
-        
-        <li>
-          <a href="#costuming">Costuming</a>
-        </li>
-        <li><a href="#repairs">Repairs & Restorations</a></li>
-        <li><a href="#lessons">Lessons & Workshops</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#upholstery">(re-)Upholstery</a></li>
-        <li><a href="#musicians">Musicians</a></li>
-        <li><a href="#commercial">Commercial Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      </div></div>
+    
     <div class="wrapper">
+     
     <section id="featured-articles" class="featured-articles">
-    <div class="container flow">
-      
-      <p class="text-center">
-       
+    <div class="container flow">      
+      <p class="tagline">
+       Welcome to my world!
           I make costumes, repair/restore textile and reupholster vintage
           furniture. Reach out if you have an interesting project, I love a
           challenge!✨
         </p>      
-        <div class="section-title text-center">Featured articles</div  >
+        <div class="section-title ">Latest posts</div  >
       <ul role="list" class="articles__list flow">
         {%- for post in collections.featured | reverse -%}
         {% include 'article-snippet.njk' %}
@@ -188,27 +166,7 @@ layout: 'base.njk'
         </div>
       </div>
 
-      <footer class="footer">
-        
-          <p>
-          <div class="social">
-           
-            <a
-              href="https://www.instagram.com/daisy_lee_the_pastiechef/"
-              target="_blank"
-            >
-              <i class="fa fa-instagram fa-2x"></i>
-            </a>
-          </div>
-          <div class="social">
-            <a href="https://www.facebook.com/daisy.lee.9237" target="_blank"
-              ><i class="fa fa-facebook fa-2x"></i>
-            </a>
-          </div>
-        </p>
-        
-        
-      </footer>
+    
     </div>
    
   </div>

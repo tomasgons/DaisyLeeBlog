@@ -10,17 +10,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.outer {
+body {
   margin: 0 auto;
   padding: 20px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: whitesmoke;
   background-image: url(/assets/blog/pics/walpaper2.jpg);
-}
-
-.snippet img {
-  max-width: 80%;
-  height: auto;
 }
 
 header {
@@ -38,31 +33,13 @@ ul li {
   padding: 0;
 }
 
-/* //////////////////////
-  General styling
-  /////////////////////// */
-
-/* //////////////////////
-  Utility Classes
-  /////////////////////// */
-
-/* select all direct childen of .flow
-   and add margin to the top for proper
-   spacing */
-
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
-}
-
-/* typgraphy */
-
 .article-title,
 .section-title {
-  color: var(--clr-primary-500);
+  color: white;
 }
 
 .article-title {
-  font-size: var(--fs-700);
+  font-size: 30px;
 }
 
 .section-title {
@@ -70,19 +47,10 @@ ul li {
   margin: 40px auto;
 }
 
-/* //////////////////////
-  Header
-  /////////////////////// */
-
-/* //////////////////////
-  Footer
-  /////////////////////// */
-
 .site-footer {
   --logo-color: currentColor;
   padding: 2em 0;
-  color: rgb(119, 3, 3);
-  background-color: var(--clr-primary-500);
+  background-color: rgb(119, 3, 3);
 
   display: flex;
   -ms-flex-pack: distribute;
@@ -93,10 +61,6 @@ ul li {
   color: #fff659;
 }
 
-/* //////////////////////
-  Homepage
-  /////////////////////// */
-
 .featured-articles {
   background-color: rgb(255, 226, 231);
 }
@@ -106,12 +70,16 @@ ul li {
   --flow-spacer: 3rem;
   margin: 6rem 0;
 }
-
-/* //////////////////////
-  Individual article page
-  /////////////////////// */
-
+.tagline {
+  top: -7rem;
+  right: -10rem;
+  padding: 7px;
+  font-size: 140%;
+  color: whitesmoke;
+  background: rgba(110, 4, 4, 0.75);
+}
 .main-article {
+  margin-top: 5rem;
   margin-bottom: 3rem;
 }
 
@@ -123,6 +91,15 @@ ul li {
   grid-area: featured;
   color: black;
   padding: 10px;
+}
+.article-title {
+  margin-bottom: 5rem;
+  font-size: 250%;
+}
+.section-title {
+  margin-top: 4rem;
+  font-size: 250%;
+  color: rgb(105, 4, 4);
 }
 .snippet {
   display: grid;
@@ -202,10 +179,16 @@ input[type="submit"] button:focus {
     text-align: left;
   }
 }
-
+.mainpic {
+  max-width: 80%;
+  margin: 3rem auto;
+  z-index: -10;
+}
 .headerimg {
   text-align: center;
   position: relative;
+  max-width: 100%;
+  z-index: -10;
 }
 .headerimg img {
   text-align: center;
@@ -217,7 +200,7 @@ input[type="submit"] button:focus {
   top: 20px;
   left: 3px;
   font-size: 90%;
-  background: url(pics/walpaper2.jpg) -20px -20px no-repeat;
+  background: url(/assets/blog/pics/walpaper2.jpg) -20px -20px no-repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -331,6 +314,7 @@ nav li a:hover {
 
   grid-template-columns: 1fr;
   grid-template-areas:
+    "main-article"
     "featured "
     "costuming "
     "mslidecontainer"
@@ -343,6 +327,17 @@ nav li a:hover {
     "about "
     "footer ";
   justify-content: center;
+}
+.main-article {
+  grid-area: main-article;
+  max-width: 100%;
+
+  justify-self: center;
+}
+.main-article img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 #costuming {
   grid-area: costuming;
@@ -545,12 +540,12 @@ footer {
   justify-content: space-around;
 
   padding: 5px;
-  width: 80%;
-  margin-top: 70px;
+
+  margin: 0 50px;
   justify-self: center;
 
   text-align: left;
-  background-color: rgba(110, 4, 4, 0.935);
+  background-color: rgba(103, 1, 1, 0.535);
 }
 footer .social i {
   color: #fff659;
@@ -572,6 +567,7 @@ footer .social i {
     grid-template-areas:
       "header header header"
       "navbar navbar navbar"
+      "main-article main-article main-article"
       "featured featured featured"
       "costuming costuming costuming"
       "mslidecontainer mslidecontainer mslidecontainer"
