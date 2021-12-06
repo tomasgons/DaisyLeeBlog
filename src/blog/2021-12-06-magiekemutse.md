@@ -5,7 +5,7 @@ description: "Magiekemutse haute couture kwaliteits momentje met chef du
 author: DL
 date: 2021-12-06T20:43:18.218Z
 tags:
-  - post
+  - featured
 image: https://www.instagram.com/p/CXBtOevoLPs/?utm_source=ig_web_copy_link
 imageAlt: "Magiekemutse haute couture kwaliteits momentje met chef du ateliers
   #daisyleeaccessories chef du babbels #magiekejansen"
