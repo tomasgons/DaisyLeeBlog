@@ -1,11 +1,11 @@
 <li>
-        <artical class="snippet">
+        <article class="snippet">
          <img
                 src="{{ post.data.image}}"
                 alt={{ post.data.imageAlt}}
                 class="snippet__image"
               />
-        <h3 class="snippet_title"><a href="{{ post.url }}">{{ post.data.title}}</a></h3>
+        <div class="snippet_title"><a href="{{ post.url }}">{{ post.data.title}}</a></div>
         <p class="snippet__meta">by 
         <span>{{ post.data.title}}</span> on 
         <span>{{ post.data.date.toDateString()}}</span>
@@ -14,6 +14,6 @@
         <p class="snippet__body">
                 {{ post.data.description}}
         </p>
-         <a href="{{ post.url}}" class="btn btn--primary">Continue Reading</a>
-         </artical>
+         <button><a href="{{ post.url}}" class="btn btn--primary">Continue Reading</a></button>
+         </article>
         </li>

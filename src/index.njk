@@ -6,50 +6,211 @@ layout: 'base.njk'
 
 
 
-  <section class="hero">
+ <div class="outer">
+    <header id="header">
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <h1>DAISY LEE</h1>
+      <div class="headerimg">
+        <img src="/assets/blog/pics/Daisy/dl6a.jpg" alt="" />
+        <p>"I love a challenge!"</p>
+      </div>
+      
+    </header>
+    <nav id="nav" class="nav-closed">
+      <ul>
+        <li><a href="#header">Home</a></li>
+        
+        <li>
+          <a href="#costuming">Costuming</a>
+        </li>
+        <li><a href="#repairs">Repairs & Restorations</a></li>
+        <li><a href="#lessons">Lessons & Workshops</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#upholstery">(re-)Upholstery</a></li>
+        <li><a href="#musicians">Musicians</a></li>
+        <li><a href="#commercial">Commercial Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+    <section id="featured-articles" class="featured-articles">
     <div class="container flow">
-      <div class="hero__content flow">
-        <h1 class="section-title">Welcome to my blog!</h1>
-        <p>
+      
+      <p class="text-center">
+       
           I make costumes, repair/restore textile and reupholster vintage
           furniture. Reach out if you have an interesting project, I love a
           challenge!✨
-        </p>
-        <p>
-          Below are some of my favourite articles, or you can go to the blog
-          page to see my most recent posts.
-        </p>
-        <div class="flex-group">
-          <a href="#featured-articles" class="btn btn--primary"
-            >Featured articles</a
-          >
-          <a href="./blog" class="btn btn--neutral"
-            >Most recent articles</a
-          >
-        </div>
-      </div>
-      <div>
-        <img src="//unsplash.it/510" alt="" class="hero__image" />
-      </div>
-    </div>
-  </section>
-
-  <section id="featured-articles" class="featured-articles">
-    <div class="container flow">
-      <h2 class="section-title text-center">Featured articles</h2>
-      <p class="text-center">
-        Here is a sample of articles which I feel give you a good idea of what
-        this site is all about.
-      </p>
+        </p>      
+        <div class="section-title text-center">Featured articles</div  >
       <ul role="list" class="articles__list flow">
-
         {%- for post in collections.featured | reverse -%}
         {% include 'article-snippet.njk' %}
 
         {%- endfor %}
-
         </ul>
     </div>
   </section>
+      <div id="costuming">
+        <h2>Costuming</h2>
+        <p>
+          "Daisy did an amazing job on my last-minute warrior costume for our
+          Zwaardspel theatre sword-fighting workshops!" -Bibi Raven
+        </p>
+        <div id="costumes">
+          <h3>Costumes</h3>
+
+          <img src="/assets/blog/pics/Costumes//appleman.jpg" alt="" /><img
+            src="/assets/blog/pics/Costumes/HalloweenChloe1.jpg"
+            alt=""
+          />
+          <img src="/assets/blog/pics/Costumes/halloweenpennywise.jpg" alt="" />
+          <img src="/assets/blog/pics/Costumes/leylaliquoricecape1.jpg" alt="" />
+          <img src="/assets/blog/pics/Costumes/leylaliquoricecape3.jpg" alt="" />
+          <img src="/assets/blog/pics/Costumes/djrosacostume.jpg" alt="" />
+        </div>
+
+        <div id="headpieces">
+          <h3>Head Pieces</h3>
+
+          <img src="/assets/blog/pics/HeadPieces/Shoehead.jpg" alt="" />
+          <img src="/assets/blog/pics/HeadPieces/Bustie.jpg" alt="Bustie" />
+          <img src="/assets/blog/pics/HeadPieces/head3.jpg" alt="" />
+          <img src="/assets/blog/pics/HeadPieces/headpiece.jpg" alt="" />
+          <img src="/assets/blog/pics/HeadPieces/transvormershatstand.jpg" alt="" />
+          <img src="/assets/blog/pics/HeadPieces/headpiece2.jpg" alt="" />
+        </div>
+      </div>
+      <div class="mslidecontainer">
+        <h3>Margarita Mariposa</h3>
+        <div class="mslider">
+          <div class="mslide current">
+            <div class="content">
+              <img src="assets/blog/pics/slides/Marg2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/Marg1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/Marg3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/Marg4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/margaritamariposagold.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/margaritamariposagold4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="mslide">
+            <div class="content">
+              <img src="/assets/blog/pics/slides/margaritamariposagold5.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="prev"><i class="fa fa-arrow-left"></i></button>
+          <button id="next"><i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div id="repairs">
+        <h2>Repairs & Restorations</h2>
+        <img src="/assets/blog/pics/Repairs/DLScissors.jpg" alt="" />
+      </div>
+
+      <div id="events">
+        <h2>Events</h2>
+
+        <img src="/assets/blog/pics/Events/missglitter.jpg" />
+
+        <img src="/assets/blog/pics/Events/eventdna.jpg" />
+
+        <img src="/assets/blog/pics/Events/milkshake.jpg " />
+
+        <img src="/assets/blog/pics/Events/tropicalsurprise1.jpg" />
+        <img src="/assets/blog/pics/Events/CurtainsBlackArchives2.jpg" />
+      </div>
+      <div id="lessons">
+        <h2>Lessons & Workshops</h2>
+
+        <img src="/assets/blog/pics/Workshops/workshop.jpg" alt="" />
+        <img src="/assets/blog/pics/Workshops/workshop2.jpg" alt="" />
+      </div>
+      <div id="upholstery">
+        <h2>(Re-)Upholstery</h2>
+        <img src="/assets/blog/pics/Upholstery/reupholstery1.jpg" alt="" />
+        <img src="/assets/blog/pics/Upholstery/reupholstery2.jpg" alt="" />
+        <img src="/assets/blog/pics/Upholstery/reupholstery3.jpg" alt="" />
+      </div>
+      <div id="musicians">
+        <h2>Musicians</h2>
+        <img src="/assets/blog/pics/Musicians/boblogg.jpg" />
+        <img src="/assets/blog/pics/Musicians/kennedyflag.jpg" />
+      </div>
+      <div id="commercial">
+        <h2>Commercial Work</h2>
+        <img src="/assets/blog/pics/Commercial/ABCwindow.jpg" alt="" />
+      </div>
+
+      <div id="about">
+        <h2>About</h2>
+        <div class="aboutcontent">
+          <img src="/assets/blog/pics/Daisy/dl5.jpg" alt="" />
+          <p>
+            Welcome to the wondrous world of Miss Daisy Lee. If you're on this
+            page you're clearly looking for something more unique and other
+            worldly than H&M! For the unitiated, Daisy Lee is your first stop
+            for affordable bespoke clothing and accessories. This formidable
+            lady is on a mission to bring back old fashioned glamour to everyday
+            life. Hailing from a long line of inventors, ingenuity is simply in
+            her blood. Daisy uses vintage material and recycled objects to
+            create costumes from every era. So, if your into (Neo) Burlesque,
+            Pin-up, Vintage, Steam Punk or just the weird and the wonderful,
+            then look no further, she is simply the complete Vaudevillian
+            package!
+          </p>
+          <p id="contact">contact: bartsch_li@hetnet.nl</p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        
+          <p>
+          <div class="social">
+           
+            <a
+              href="https://www.instagram.com/daisy_lee_the_pastiechef/"
+              target="_blank"
+            >
+              <i class="fa fa-instagram fa-2x"></i>
+            </a>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/daisy.lee.9237" target="_blank"
+              ><i class="fa fa-facebook fa-2x"></i>
+            </a>
+          </div>
+        </p>
+        
+        
+      </footer>
+    </div>
+   
+  </div>
 
 
