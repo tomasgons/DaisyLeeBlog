@@ -295,7 +295,7 @@ nav li {
   float: left;
 }
 
-nav li a {
+a {
   display: inline-block;
   color: rgba(249, 233, 233);
   padding: 14px 16px;
