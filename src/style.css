@@ -220,6 +220,9 @@ nav li a:hover {
 .featured-articles img {
   width: 90%;
 }
+.main-article p {
+  text-align: left;
+}
 .article-title {
   margin-bottom: 5rem;
   font-size: 250%;
