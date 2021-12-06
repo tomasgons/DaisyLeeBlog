@@ -17,7 +17,17 @@ layout: 'base.njk'
           {{ content | safe }}
         
         </article>
+        <<section id="featured-articles" class="featured-articles">
+    <div class="container flow">      
         
+        <div class="section-title ">Latest posts</div  >
+      <ul role="list" class="articles__list flow">
+        {%- for post in collections.featured | reverse -%}
+        {% include 'article-snippet.njk' %}
+
+        {%- endfor %}
+        </ul>
+    </div>
         
       </div>
       <div style="visibility: hidden" class="js"><div class="buttons" >
