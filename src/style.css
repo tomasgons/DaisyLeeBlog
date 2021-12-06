@@ -18,6 +18,11 @@ html {
   background-image: url(/assets/blog/pics/walpaper2.jpg);
 }
 
+.snippet img {
+  max-width: 80%;
+  height: auto;
+}
+
 header {
   grid-area: header;
   width: 80%;
@@ -115,15 +120,13 @@ ul li {
   opacity: 0.9;
 }
 .featured-articles {
-  width: 100%;
   grid-area: featured;
   color: black;
   padding: 10px;
 }
-
 .snippet {
   display: grid;
-
+  width: 100%;
   padding: 10px;
   text-align: left;
   gap: 1em;
