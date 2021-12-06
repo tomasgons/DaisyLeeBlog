@@ -517,12 +517,20 @@ footer {
   margin: 0 50px;
   justify-self: center;
 
-  text-align: left;
   background-color: rgba(103, 1, 1, 0.535);
 }
-footer .social i {
+footer .social i,
+.social p {
   color: #fff659;
 }
+.mail {
+  margin-top: 5px;
+}
+.social p {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media screen and (min-width: 500px) {
   img {
     max-width: 90%;
