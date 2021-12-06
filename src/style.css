@@ -61,10 +61,6 @@ ul li {
   color: #fff659;
 }
 
-.featured-articles {
-  background-color: rgb(255, 226, 231);
-}
-
 .articles__list {
   grid-area: articles__list;
   --flow-spacer: 3rem;
@@ -91,6 +87,7 @@ ul li {
   grid-area: featured;
   color: black;
   padding: 10px;
+  background-color: rgb(255, 226, 231);
 }
 .article-title {
   margin-bottom: 5rem;
@@ -314,7 +311,7 @@ nav li a:hover {
 
   grid-template-columns: 1fr;
   grid-template-areas:
-    "main-article"
+    "main-articles"
     "featured "
     "costuming "
     "mslidecontainer"
@@ -328,16 +325,13 @@ nav li a:hover {
     "footer ";
   justify-content: center;
 }
-.main-article {
-  grid-area: main-article;
-  max-width: 100%;
-
-  justify-self: center;
-}
-.main-article img {
-  max-width: 100%;
-  height: auto;
+.main-articles {
+  grid-area: main-articles;
+  max-width: 80%;
   margin: 0 auto;
+}
+.main-articles img {
+  height: auto;
 }
 #costuming {
   grid-area: costuming;
