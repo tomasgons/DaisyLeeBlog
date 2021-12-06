@@ -1,4 +1,4 @@
-/* daisyleestyles */
+/* basics */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -31,20 +31,6 @@ ul li {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.article-title,
-.section-title {
-  color: white;
-}
-
-.article-title {
-  font-size: 30px;
-}
-
-.section-title {
-  font-size: 25px;
-  margin: 40px auto;
 }
 
 .mainpic {
@@ -82,6 +68,19 @@ h1 {
   color: #fff659;
 }
 
+h2 {
+  font-size: 200%;
+  color: rgba(80, 4, 4, 0.935);
+  text-align: center;
+  font-weight: bold;
+}
+h3 {
+  font-size: 170%;
+  color: rgba(80, 4, 4, 0.935);
+  text-align: center;
+  font-weight: bold;
+}
+
 header .toggle {
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -94,19 +93,6 @@ header .toggle {
   border: none;
   position: absolute;
   padding: 0;
-}
-
-h2 {
-  font-size: 200%;
-  color: rgba(80, 4, 4, 0.935);
-  text-align: center;
-  font-weight: bold;
-}
-h3 {
-  font-size: 170%;
-  color: rgba(80, 4, 4, 0.935);
-  text-align: center;
-  font-weight: bold;
 }
 
 #toggle {
@@ -197,11 +183,11 @@ nav li a:hover {
   justify-content: center;
 }
 
-/* .articles__list {
+.articles__list {
   grid-area: articles__list;
   --flow-spacer: 3rem;
   margin: 6rem 0;
-} */
+}
 .tagline {
   top: -7rem;
   right: -10rem;
@@ -264,9 +250,33 @@ nav li a:hover {
   object-fit: cover;
 }
 
-.snippet__meta {
+.snippet__meta,
+.snippet__meta p {
   grid-area: meta;
-  color: rgb(1, 1, 135);
+
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.snippet__body,
+.snippet__body p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.snippet_title a,
+.snippet_title {
+  color: rgb(0, 8, 119);
+  font-size: 25px;
+  text-decoration: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.snippet__title a:hover,
+.snippet__title a:focus {
+  color: purple;
 }
 
 .snippet__meta span {
@@ -293,18 +303,6 @@ button a {
 button button:focus,
 input[type="submit"] button:focus {
   outline: none;
-}
-
-.snippet_title a {
-  color: rgb(0, 8, 119);
-  font-size: 25px;
-  text-decoration: none;
-  text-align: left;
-}
-
-.snippet__title a:hover,
-.snippet__title a:focus {
-  color: purple;
 }
 
 #costuming {
