@@ -594,8 +594,8 @@ footer .social i,
     gap: 20px;
 
     margin: 0 auto;
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
@@ -647,6 +647,13 @@ footer .social i,
     text-align: center;
   }
   .main-article {
+    width: 100%;
+  }
+  .wrapperarticle {
+    display: grid;
+    width: 75%;
+  }
+  .featured-articles {
     width: 100%;
   }
 
