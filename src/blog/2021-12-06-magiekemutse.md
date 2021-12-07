@@ -1,6 +1,6 @@
 ---
-title: "Magiekemutse "
-description: Mutsen voor Magieke!
+title: Mutsen voor Magieke
+description: Beanies for Magieke!
 author: DL
 date: 2021-12-06T20:43:18.218Z
 tags:
@@ -8,4 +8,4 @@ tags:
 image: /assets/blog/magiekemutse.png
 imageAlt: sewing patches on beanies
 ---
-Beanies for Magieke Jansen's Het Rudie Kartel, synthpopschlager for weirdo's.
+Adding patches to beanies for Magieke Jansen's Het Rudie Kartel, synthpopschlager for weirdo's.
