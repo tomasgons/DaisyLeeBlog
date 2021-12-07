@@ -21,6 +21,8 @@ body {
 img {
   max-width: 80%;
   height: auto;
+
+  box-shadow: 2px 2px 4px 0 rgba(47, 47, 47, 0.5);
 }
 header {
   grid-area: header;
