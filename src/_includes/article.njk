@@ -7,33 +7,37 @@ layout: 'base.njk'
     
   
 <div class="wrapper">
-      <article class="main-article">
+    
+    <div class="main-article">
         
-          <h2 class="article-title">{{ title }}</h2>
-          <figure class="main-article__figure">
-            <img src="{{ image }}" alt="{{ imageAlt }}" />
+    <h2 class="article-title">{{ title }}</h2>
+    <figure class="main-article__figure">
+    <img src="{{ image }}" alt="{{ imageAlt }}" />
             <figcaption>{{imageAlt}}</figcaption>
           </figure>
           {{ content | safe }}
-        
-        </article>
-        <<section id="featured-articles" class="featured-articles">
-    <div class="container flow">      
-        
-        <div class="section-title ">Latest posts</div  >
-      <ul role="list" class="articles__list flow">
+      </div>
+
+<div class="featured-articles-2">
+  <div class="section-title ">Latest post</div>
+      <ul role="list" class="articles__list">
         {%- for post in collections.featured | reverse -%}
         {% include 'article-snippet.njk' %}
 
         {%- endfor %}
         </ul>
-    </div>
-        
-      </div>
-      <div style="visibility: hidden" class="js"><div class="buttons" >
-          <button id="prev"><i class="fa fa-arrow-left"></i></button>
-          <button id="next"><i class="fa fa-arrow-right"></i></button>
-        </div></div>
+</div>
+    
+<div style="visibility: hidden" class="js">
+
+<div class="buttons">
+<button id="prev"><i class="fa fa-arrow-left"></i></button>
+<button id="next"><i class="fa fa-arrow-right"></i></button>
+</div>
+
+</div>
+
+
       
       
        
