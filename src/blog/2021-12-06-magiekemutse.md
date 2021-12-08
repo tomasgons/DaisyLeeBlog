@@ -8,4 +8,5 @@ tags:
 image: /assets/blog/magiekemutse.png
 imageAlt: sewing patches on beanies
 ---
+
 Adding patches to beanies for Magieke Jansen's Het Rudie Kartel, synthpopschlager for weirdo's.

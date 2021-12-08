@@ -8,4 +8,5 @@ tags:
 image: /assets/blog/img-20211202-wa0044.jpg
 imageAlt: Upholstering a chair
 ---
-*
+
+-

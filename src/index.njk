@@ -26,7 +26,7 @@ layout: 'base.njk'
         </p>      
         <div class="section-title ">Latest posts</div  >
       <ul role="list" class="articles__list flow">
-        {%- for post in collections.featured | reverse -%}
+        {%- for featured in collections.featured | reverse -%}
         {% include 'article-snippet.njk' %}
 
         {%- endfor %}
