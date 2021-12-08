@@ -230,16 +230,36 @@ nav li a:hover {
   background-color: rgba(255, 226, 231, 0.7);
   border-radius: 5px;
 }
+.sub-article {
+  grid-area: main-article;
+  display: grid;
+  justify-content: stretch;
 
-.main-article__figure figcaption {
-  margin: 1rem 0;
-  opacity: 0.9;
+  margin-bottom: 3rem;
+  width: 100%;
+  color: rgba(103, 1, 1, 0.535);
+  padding: 10px;
+  background-color: rgba(255, 226, 231, 0.7);
+  border-radius: 5px;
 }
-.main-article p {
+.main-article p,
+.sub-article p {
   text-align: left;
+  margin: 20px;
 }
 .article-title {
   margin-bottom: 5rem;
+  font-size: 250%;
+  background: url(/assets/blog/pics/walpaper2.jpg) -20px -20px no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.sub-article img {
+  width: fit-content;
+}
+.sub-article-title {
+  margin-bottom: 2rem;
   font-size: 250%;
   background: url(/assets/blog/pics/walpaper2.jpg) -20px -20px no-repeat;
   -webkit-text-fill-color: transparent;
