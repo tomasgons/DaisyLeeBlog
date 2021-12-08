@@ -3,9 +3,9 @@ title: Daisy Lee's Blog
 layout: 'base.njk'
 ---
 
-   
-      <div class="section container">
-        <h1 class="section-title">Recent articles</h1>
+   <div class="wrapperarticle">
+      <div class="featured-articles-2">
+        <h2 class="section-title">All posts</h2>
         <ul role="list" class="articles__list flow">
 
         {%- for post in collections.post  | reverse -%}
@@ -16,3 +16,11 @@ layout: 'base.njk'
         </ul>
           
       </div>
+
+       <div style="visibility: hidden" class="js">
+  <div class="buttons">
+  <button  Button id="prev"><i class="fa fa-arrow-left"></i></button>
+  <button id="next"><i class="fa fa-arrow-right"></i></button>
+  </div>
+  
+</div>
