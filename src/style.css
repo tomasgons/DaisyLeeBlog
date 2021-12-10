@@ -242,6 +242,9 @@ nav li a:hover {
   background-color: rgba(255, 226, 231, 0.7);
   border-radius: 5px;
 }
+.sub-article-figure {
+  resize: both;
+}
 .main-article p,
 .sub-article p {
   text-align: left;
