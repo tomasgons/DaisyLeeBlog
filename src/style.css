@@ -18,12 +18,12 @@ body {
   background-image: url(/assets/blog/pics/walpaper2.jpg);
 }
 
-img {
+/* img {
   max-width: 80%;
   height: auto;
 
   box-shadow: 2px 2px 4px 0 rgba(47, 47, 47, 0.5);
-}
+} */
 header {
   grid-area: header;
   width: 80%;
@@ -57,16 +57,6 @@ ul li {
   border-radius: 4px;
 }
 
-.headerimg p {
- position: absolute;
-  top: 5rem;
-  left: 3rem;
-  font-size: 5rem;
-  background: url(/assets/blog/pics/walpaper2.jpg) -20px -20px no-repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
 
 h1 {
   text-align: center;
@@ -313,8 +303,11 @@ nav li a:hover {
   background-color: rgba(255, 226, 231, 0.7);
   border-radius: 5px;
 }
+.featured-articles-2 img {
+  max-height: 90%;
+}
 .featured-articles img {
-  width: 90%;
+  max-height: 90%;
 }
 
 .snippet {
