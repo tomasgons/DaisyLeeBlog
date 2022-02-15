@@ -58,10 +58,10 @@ ul li {
 }
 
 .headerimg p {
-  position: absolute;
-  top: 20px;
-  left: 3px;
-  font-size: 90%;
+ position: absolute;
+  top: 5rem;
+  left: 3rem;
+  font-size: 5rem;
   background: url(/assets/blog/pics/walpaper2.jpg) -20px -20px no-repeat;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -72,7 +72,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-family: "Imbue", serif;
-  font-size: 500%;
+  font-size: 10rem;
   color: #fff659;
 }
 p {
