@@ -185,6 +185,9 @@ nav li a:hover {
     "footer ";
   justify-content: center;
 }
+.wrapper img {
+max-width: 20rem;
+}
 
 .wrapperarticle {
   display: grid;
