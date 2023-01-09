@@ -22,6 +22,6 @@
     "@11ty/eleventy": "^0.12.1"
   },
   "dependencies": {
-    "luxon": "^2.1.1"
+    "luxon": "^2.5.2"
   }
 }
